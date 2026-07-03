@@ -17,16 +17,16 @@ const kiloToPound = 2.204
 convertEl.addEventListener("click", function(){
     let calcNumber = Number(inputEl.value)
     lengthEl.innerHTML = 
-    `${calcNumber} meters = ${(calcNumber * 3.281).toFixed(2)} feet |
-     ${calcNumber} feet = ${(calcNumber / 3.281).toFixed(2)} meters`
+    `${calcNumber} meters = ${(calcNumber * meterToFeet).toFixed(2)} feet |
+     ${calcNumber} feet = ${(calcNumber / meterToFeet).toFixed(2)} meters`
     
     volumeEl.innerHTML = 
-    `${calcNumber} liters = ${ (calcNumber * 0.264).toFixed(2) } gallons |
-     ${calcNumber} gallons = ${ (calcNumber / 0.264).toFixed(2) } liters
+    `${calcNumber} liters = ${ (calcNumber * literToGal).toFixed(2) } gallons |
+     ${calcNumber} gallons = ${ (calcNumber / literToGal).toFixed(2) } liters
     `
     massEl.innerHTML = 
-    `${calcNumber} kilograms = ${ (calcNumber * 2.204).toFixed(2) } pounds |
-    ${calcNumber} pounds = ${ (calcNumber / 2.204).toFixed(2) } kilos
+    `${calcNumber} kilograms = ${ (calcNumber * kiloToPound).toFixed(2) } pounds |
+    ${calcNumber} pounds = ${ (calcNumber / kiloToPound).toFixed(2) } kilos
     `
 })
 
