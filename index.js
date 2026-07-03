@@ -10,6 +10,10 @@ const lengthEl = document.getElementById("meter-p")
 const volumeEl = document.getElementById("liter-p")
 const massEl = document.getElementById("kilo-p")
 
+const meterToFeet = 3.281
+const literToGal = 0.264
+const kiloToPound = 2.204
+
 convertEl.addEventListener("click", function(){
     let calcNumber = Number(inputEl.value)
     lengthEl.innerHTML = 
